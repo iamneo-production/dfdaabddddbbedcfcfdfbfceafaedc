@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping()
-public class TaskController {
+public class TaskController{
     @Autowired
     private TaskService service;
     
     @PostMapping("/saveTask")
     public Taskentity saveTask(@RequestBody Taskentity taskentity){
-        Taskentity output = service.saveTask(Taskentity);
+        Taskentity output = service.saveTask(taskentity);
         return output;
     }
 
