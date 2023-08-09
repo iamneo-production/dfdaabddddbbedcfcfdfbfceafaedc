@@ -18,7 +18,7 @@ public class TaskController {
     
     @PostMapping("/saveTask")
     public Taskentity saveTask(@RequestBody Taskentity taskentity){
-        Taskentity output = service.saveTask(taskentity);
+        Taskentity output = service.saveTask(Taskentity);
         return output;
     }
 
