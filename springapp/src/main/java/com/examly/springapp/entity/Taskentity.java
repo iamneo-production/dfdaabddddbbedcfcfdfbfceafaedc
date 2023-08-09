@@ -52,7 +52,4 @@ public class Taskentity {
         this.taskName = taskName;
         this.taskStatus = taskStatus;
     }
-  public Taskentity(){
-      
-  }  
 }
